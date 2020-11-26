@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>pseudoclass</title>
+    <style media="screen">
+      li:first-child{color: red;}
+      li:last-child{color: blue;}
+
+      a:link {color:blue;}
+      a:visited {color:gray;}
+
+      a:focus {background-color : yellow;}
+      a:hover {font-weight: bold;}
+      a:active {color:red;}
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li> <!-- 편하게 이해할려면, 여기에는 first-child 클래스가 -->
+      <li>CSS</li>
+      <li>JS</li> <!-- 여기에는 last-child 클래스가 있다고 생각하면 됨 -->
+
+      <a href="http://naver.com">네이버</a>
+      <a href="http://google.com">구글</a>
+      <a href="http://daum.net">다음</a>
+    </ul>
+  </body>
+</html>
