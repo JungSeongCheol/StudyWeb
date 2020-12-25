@@ -1,80 +1,47 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>display</title>
-  <style>
-    body>div {
-      padding: 5px;
-      border: 1px dashed #aaa;
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>display</title>
+  </head>
+  <style media="screen">
+    .inline{
+      /* width: 100px;
+      height: 100px; */
+      margin: 10px;
+      padding: 10px;
+      border: 10px solid red; /* inline에서 좌 우만 적용*/
+      background: blue;
     }
 
-    .box {
-      padding: 15px;
-      background-color: #eee;
-      border: 1px solid #aaa;
+    .block{
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      padding: 10px;
+      border: 10px solid red;
+      background: blue;
     }
 
-    .none .box {
-      display: none;
+    .inlineblock{
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      padding: 10px;
+      border: 10px solid red;
+      background: blue;
     }
-
-    .inline .box {
-      display: inline;
-    }
-
-    .block .box {
-      display: block;
-    }
-
-    .inline-block .box {
-      display: inline-block;
-    }
-
-    .list-item .box {
-      display: list-item;
-    }
+    /* inline-block inline처럼 배치, block처럼 해당 박스 모델의 속성을 가진다.*/
   </style>
-</head>
-
-<body>
-  <h1>display</h1>
-  <h2>none</h2>
-  <div class="none">
-    <div class="box">box1</div>
-    <div class="box">box2</div>
-    <div class="box">box3</div>
-  </div>
-  <h2>inline</h2>
-  <div class="inline">
-    <div class="box">box1</div>
-    <div class="box">box2</div>
-    <div class="box">box3</div>
-    <div class="box">box4</div>
-    <div class="box">box5</div>
-    <div class="box">box6</div>
-    <div class="box">box7</div>
-    <div class="box">box8</div>
-    <div class="box">box9</div>
-    <div class="box">box10</div>
-  </div>
-  <h2>block</h2>
-  <div class="block">
-    <div class="box">box1</div>
-    <div class="box">box2</div>
-    <div class="box">box3</div>
-  </div>
-  <h2>inline-block</h2>
-  <div class="inline-block">
-    <div class="box">box1</div>
-    <div class="box">box2</div>
-    <div class="box">box3</div>
-  </div>
-  <h2>list-item</h2>
-  <div class="list-item">
-    <div class="box">box1</div>
-    <div class="box">box2</div>
-    <div class="box">box3</div>
-  </div>
-</body>
+  <body>
+    <div>
+      <div style="display:inline" class="inline">box</div>
+    </div>
+    <div>
+      <div style="display:block" class="block">box</div>
+    </div>
+    <div>
+      <div style="display:inline-block" class="inlineblock">box</div>
+    </div>
+  </body>
 </html>
