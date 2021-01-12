@@ -53,38 +53,41 @@
   </style>
 </head>
 <body>
-  <h1>position (Offset 미지정)</h1>
-  <h2>static (기본)</h2>
-  <div class="parent">
-    <div class="sibling">Sibling 1</div>
-    <div class="child static">static</div>
-    <div class="sibling">Sibling 2</div>
+  <div style="display:none">
+    <h1>position (Offset 미지정)</h1>
+    <h2>static (기본)</h2>
+    <div class="parent">
+      <div class="sibling">Sibling 1</div>
+      <div class="child static">static</div>
+      <div class="sibling">Sibling 2</div>
+    </div>
+
+    <h2>relative</h2>
+    <div class="parent">
+      <div class="sibling">Sibling 1</div>
+      <div class="child relative">relative</div>
+      <div class="sibling">Sibling 2</div>
+    </div>
+
+    <h2>absolute</h2>
+    <div class="parent">
+      <div class="sibling">Sibling 1</div>
+      <!-- absolute, fixed는 inline요소일때 display:block으로 변경시킴. inline-block 값을 임의 지정했을 때는 그 값을 유지함. -->
+      <span class="child absolute">absolute</span>
+      <div class="sibling">Sibling 2</div>
+    </div>
+
+    <h2>fixed</h2>
+    <div class="parent">
+      <div class="sibling">Sibling 1</div>
+      <!-- 현재 fixed는 offset값이 없어 뷰포트 밖으로 밀려나오면서 화면 아래로 사라짐 -->
+      <div class="child fixed">fixed</div>
+      <div class="sibling">Sibling 2</div>
+    </div>
   </div>
 
-  <h2>relative</h2>
-  <div class="parent">
-    <div class="sibling">Sibling 1</div>
-    <div class="child relative">relative</div>
-    <div class="sibling">Sibling 2</div>
-  </div>
 
-  <h2>absolute</h2>
-  <div class="parent">
-    <div class="sibling">Sibling 1</div>
-    <!-- absolute, fixed는 inline요소일때 display:block으로 변경시킴. inline-block 값을 임의 지정했을 때는 그 값을 유지함. -->
-    <span class="child absolute">absolute</span>
-    <div class="sibling">Sibling 2</div>
-  </div>
-
-  <h2>fixed</h2>
-  <div class="parent">
-    <div class="sibling">Sibling 1</div>
-    <!-- 현재 fixed는 offset값이 없어 뷰포트 밖으로 밀려나오면서 화면 아래로 사라짐 -->
-    <div class="child fixed">fixed</div>
-    <div class="sibling">Sibling 2</div>
-  </div>
-
-<div style="display:none">
+<div style="">
   <h1>position (Offset 지정)</h1>
   <h2>static - </h2>
   <div class="parent">
