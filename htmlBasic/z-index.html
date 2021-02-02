@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -23,26 +23,67 @@
       background-color: pink;
       border: 2px solid red;
     }
+
+      div {
+          width: 100px;
+          height: 100px;
+          color: white;
+      }
+
+      .red, .blue {
+          position: absolute;
+      }
+
+      .green {
+          position: relative;
+      }
+
+      .red {
+          z-index: 5;
+      }
+
+      .blue {
+          z-index: 6;
+      }
+
+      .green {
+          z-index: 7;
+      }
+
+      .orange {
+          z-index: 8;
+      }
   </style>
 </head>
 <body>
-  <div class="wrap">
+    <!--<div class="wrap">
 
-    <h1 class="practive_title">z-index 속성</h1>
-    <div class="z_area">
-      <div class="parent" style="z-index:11">
-        position: relative;
-        <div class="child" style="right:20px;z-index:1000;">
-          position: absolute;
+        <h1 class="practive_title">z-index 속성</h1>
+        <div class="z_area">
+            <div class="parent" style="z-index:11">
+                position: relative;
+                <div class="child" style="right:20px;z-index:1000;">
+                    position: absolute;
+                </div>
+            </div>
+            <div class="parent" style="">
+                position: relative;
+                <div class="child">
+                    position: absolute;
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="parent" style="">
-        position: relative;
-        <div class="child">
-          position: absolute;
-        </div>
-      </div>
-    </div>
-</div>
+
+
+    </div>-->
+    <!--Test용-->
+    <div class="red" style="background: red;">RED</div>
+
+    <div class="blue" style="background: blue; margin-top: 30px; margin-left: 30px;">BLUE</div>
+
+    <div class="green" style="background: green; margin-top: 60px; margin-left: 60px;">GREEN</div>
+
+    <div class="orange" style="background: orange; margin-left: 90px;">ORANGE</div>
+
 </body>
 </html>
